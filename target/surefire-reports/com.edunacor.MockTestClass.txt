@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.edunacor.AppTest
+Test set: com.edunacor.MockTestClass
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 sec - in com.edunacor.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.81 sec - in com.edunacor.MockTestClass
