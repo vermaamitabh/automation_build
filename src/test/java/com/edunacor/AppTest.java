@@ -5,13 +5,22 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 
+
+import com.edunacor.DataService;
+
+
 /**
  * Unit test for simple App.
  */
+//
 public class AppTest 
     extends TestCase
 {
-	MyMath myMath = new MyMath();
+	DataService dataImpl = new DataService();
+	
+	MyMath myMath= new MyMath(dataImpl);
+	
+	
     /**
      * Create the test case
      *
@@ -52,4 +61,11 @@ public class AppTest
 	public void testMultiply() {
 		assertEquals(6, myMath.multiply(new int[] {2,3}));
 	}
+	
+	public void testStubData() {
+		int result=myMath.findGreatestFromAllData();	
+		assertEquals(8, result);
+	}
+	
+	
 }
